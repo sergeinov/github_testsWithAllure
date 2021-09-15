@@ -1,1 +1,1 @@
-# github_testsWithAllure
+# Tests with Allure reporting
