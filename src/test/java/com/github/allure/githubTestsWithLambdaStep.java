@@ -13,7 +13,7 @@ import static org.openqa.selenium.By.linkText;
 
 public class githubTestsWithLambdaStep {
 
-    private final static String REPOSITORY = "allure-framework/allure2";
+    private final static String REPOSITORY_NAME = "allure-framework/allure2";
     private final static String URL = "https://github.com/";
     private final static Integer ISSUE_NUMBER = 1328;
 
@@ -25,14 +25,15 @@ public class githubTestsWithLambdaStep {
 
     @Test
     void githubTest() {
+
         step("Open a page " + URL, () -> {
             open(URL);
         });
-        step("Enter " + REPOSITORY + " in the search field and Press ENTER", () -> {
+        step("Enter " + REPOSITORY_NAME + " in the search field and Press ENTER", () -> {
             $("input[data-test-selector='nav-search-input']").setValue("allure-framework/allure2").submit();
         });
-        step("Open the repository " + REPOSITORY, () -> {
-            $(linkText(REPOSITORY)).click();
+        step("Open the repository " + REPOSITORY_NAME, () -> {
+            $(linkText(REPOSITORY_NAME)).click();
         });
         step("Go to Issues tab of project", () -> {
             $("#issues-tab").click();
