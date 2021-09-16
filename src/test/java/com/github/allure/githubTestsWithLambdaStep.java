@@ -30,7 +30,7 @@ public class githubTestsWithLambdaStep {
             open(URL);
         });
         step("Enter " + REPOSITORY_NAME + " in the search field and Press ENTER", () -> {
-            $("input[data-test-selector='nav-search-input']").setValue("allure-framework/allure2").submit();
+            $("input[data-test-selector='nav-search-input']").setValue(REPOSITORY_NAME).submit();
         });
         step("Open the repository " + REPOSITORY_NAME, () -> {
             $(linkText(REPOSITORY_NAME)).click();
