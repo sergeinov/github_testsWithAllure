@@ -16,6 +16,7 @@ public class githubTestsWithLambdaStep {
     private final static String REPOSITORY_NAME = "allure-framework/allure2";
     private final static String URL = "https://github.com/";
     private final static Integer ISSUE_NUMBER = 1328;
+    private final static String ISSUE_TITLE = "support Golang";
 
     @BeforeAll
     static void setup() {
@@ -41,8 +42,8 @@ public class githubTestsWithLambdaStep {
         step("Check that the page should have an Issue #" + ISSUE_NUMBER, () -> {
             $("#issue_1328").shouldHave(visible).scrollIntoView(true);
         });
-        step("Check that an Issue #" + ISSUE_NUMBER + " has a title \"support Golang\"", () -> {
-            $("#issue_1328").shouldHave(text("support Golang"));
+        step("Check that an Issue #" + ISSUE_NUMBER + " has a title " + ISSUE_TITLE, () -> {
+            $("#issue_1328").shouldHave(text(ISSUE_TITLE));
         });
 
     }
