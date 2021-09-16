@@ -10,7 +10,6 @@ repositories {
 allure {                                        // for allure reporting
     version = "2.15.0"
     autoconfigure = true
-    configuration = "testImplementation"
     useJUnit5 {
     version = "2.15.0"
     }
