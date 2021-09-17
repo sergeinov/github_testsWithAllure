@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 import static org.openqa.selenium.By.linkText;
 
-public class githubTestsWithLambdaStep {
+public class GithubTestsWithLambdaStep {
 
     private final static String REPOSITORY_NAME = "allure-framework/allure2";
     private final static String URL = "https://github.com/";

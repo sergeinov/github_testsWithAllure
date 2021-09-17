@@ -4,7 +4,7 @@ import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-public class githubTestsWithAnnotatedStep {
+public class GithubTestsWithAnnotatedStep {
 
     private final static String REPOSITORY_NAME = "allure-framework/allure2";
     private final static String URL = "https://github.com/";
